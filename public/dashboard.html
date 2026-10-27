@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard | Bara Lab</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <nav><a class="brand" href="/">BARA<span>LAB</span></a><a href="/">Home</a></nav>
+  <main class="container">
+    <section class="panel"><span class="tag">CONTROL PANEL</span><h1>Dashboard</h1><p id="welcome" class="muted">Memuat profil...</p><button id="logoutButton" class="secondary" type="button">Logout</button></section>
+    <section class="grid">
+      <article class="panel"><h2>Guestbook API</h2><p class="muted">Mengambil daftar pesan dari server.</p><button id="refreshButton" type="button">Refresh Data</button><pre id="apiOutput">Menunggu...</pre></article>
+      <article class="panel"><h2>Submit JSON</h2><p class="muted">Kirim satu objek JSON ke API lokal.</p>
+        <form id="submitForm"><label>Data JSON</label><textarea name="payload" rows="5" required>{
+  "project": "Bara Lab",
+  "purpose": "learning"
+}</textarea><button type="submit">Kirim ke API</button></form>
+        <p id="submitStatus" class="status" aria-live="polite"></p>
+      </article>
+    </section>
+  </main>
+  <footer>API: /api/health · /api/guestbook · /api/submit</footer>
+  <script src="/script.js"></script>
+</body>
+</html>

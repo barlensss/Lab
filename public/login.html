@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Login | Bara Lab</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <nav><a class="brand" href="/">BARA<span>LAB</span></a><a href="/register.html">Register</a></nav>
+  <main class="auth panel">
+    <span class="tag">MEMBER ACCESS</span><h1>Welcome back.</h1>
+    <form id="loginForm">
+      <label>Username</label><input name="username" required maxlength="24" autocomplete="username">
+      <label>Password</label><input name="password" type="password" required maxlength="128" autocomplete="current-password">
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginStatus" class="status" aria-live="polite"></p><p class="muted">Belum punya akun? <a href="/register.html">Daftar</a></p>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>

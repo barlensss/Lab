@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bara Cyber Lab</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/" class="brand">BARA<span>LAB</span></a>
+    <div><a href="/login.html">Login</a><a href="/register.html">Register</a><a href="/dashboard.html">Dashboard</a></div>
+  </nav>
+  <main class="container">
+    <section class="hero panel">
+      <span class="tag">CYBERSECURITY TRAINING</span>
+      <h1>Welcome to <span>Bara Lab.</span></h1>
+      <p>Lab lokal untuk belajar HTTP, API, autentikasi, input handling, dan keamanan upload.</p>
+      <a class="btn" href="/dashboard.html">Buka Dashboard</a>
+    </section>
+    <section class="panel">
+      <h2>Guestbook</h2><p class="muted">Tulis pesan untuk pengunjung berikutnya.</p>
+      <form id="guestbookForm">
+        <label>Username</label><input name="username" maxlength="40" required placeholder="Nama kamu">
+        <label>Pesan</label><textarea name="message" maxlength="1000" required placeholder="Tulis pesan..." rows="4"></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <p id="guestStatus" class="status" aria-live="polite"></p><div id="guestList" class="guest-list"></div>
+    </section>
+    <section class="panel">
+      <h2>Upload Gambar</h2><p class="muted">JPEG, PNG, atau WebP. Maksimal 2 MB.</p>
+      <form id="uploadForm"><input type="file" name="file" accept="image/jpeg,image/png,image/webp" required><button type="submit">Upload</button></form>
+      <p id="uploadStatus" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer>Bara Cyber Lab · Local training environment</footer>
+  <script src="/script.js"></script>
+</body>
+</html>
